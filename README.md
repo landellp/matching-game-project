@@ -3,11 +3,22 @@
 ## Table of Contents
 
 * [Instructions](#instructions)
+* [Learnings] (#learnings)
+* [Preview](#preview)
 
 ## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+The Matching Game application will allow the user to flip cards in order to find a matching set.  Once a match is made, the matching cards are disabled.  Once all cards are matched, a modal will appear displaying the game's statistics:  time played, number of moves, and total score (by star rating).  
 
-To get started, open `js/app.js` and start building out the app's functionality
+A reset button also allows for a game to be restarted, reshuffling the cards and restarting the timer, once the first pair of cards is clicked. 
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## Learnings
+
+Working the Project Memory Game for the Udacity Front End Developemnt has taught me how to put disparate learnings of javascript into a cohesive, working, interactive website.  I had to utilize HTML, CSS, and Javascript in order to complete this task.  
+
+## Preview
+
+You can preview the completed game at the link below:
+
+http://htmlpreview.github.com/https://github.com/landellp/matching-game-project/index.html
+
