@@ -1,0 +1,105 @@
+<!-- <!doctype html> -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Preston's Matching Game</title>
+  <meta name="description" content="">
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <header>
+          <h1>Memory Matching Game</h1>
+      </header>
+      <section class="score-panel">
+        <div class="score">
+          <ul class="stars">
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <span class="moves">0</span> Moves
+        </div>
+        <div class="restart">
+          <i class="fa fa-repeat"></i>
+        </div>
+      </section>
+
+      <ul class="deck">
+        <li class="card " type="gem">
+          <i class="fa fa-diamond"></i>
+        </li>
+        <li class="card" type="plane">
+          <i class="fa fa-paper-plane-o"></i>
+        </li>
+        <li class="card" type="anchor">
+          <i class="fa fa-anchor"></i>
+        </li>
+        <li class="card" type="bolt">
+          <i class="fa fa-bolt"></i>
+        </li>
+        <li class="card" type="cube">
+          <i class="fa fa-cube"></i>
+        </li>
+        <li class="card" type="anchor">
+          <i class="fa fa-anchor"></i>
+        </li>
+        <li class="card" type="leaf">
+          <i class="fa fa-leaf"></i>
+        </li>
+        <li class="card" type="bicycle">
+          <i class="fa fa-bicycle"></i>
+        </li>
+        <li class="card" type="gem">
+          <i class="fa fa-diamond"></i>
+        </li>
+        <li class="card" type="bomb">
+          <i class="fa fa-bomb"></i>
+        </li>
+        <li class="card" type="leaf">
+          <i class="fa fa-leaf"></i>
+        </li>
+        <li class="card" type="bomb">
+          <i class="fa fa-bomb"></i>
+        </li>
+        <li class="card" type="bolt">
+          <i class="fa fa-bolt"></i>
+        </li>
+        <li class="card" type="bicycle">
+          <i class="fa fa-bicycle"></i>
+        </li>
+        <li class="card" type="plane">
+          <i class="fa fa-paper-plane-o"></i>
+        </li>
+        <li class="card" type="cube">
+          <i class="fa fa-cube"></i>
+        </li>
+      </ul>
+      <div>
+        <span class="timer">0 mins 0 secs</span>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+          <h2>Good Work!</h2>
+          <div class="congrats-message">
+            <p><em>You have matched all the cards!!!</em></p>
+          </div>
+          <div class="info-message">
+            <p><strong><u>Game Metrics:</u></strong></p>
+            <p>total moves: <span class="final-moves"></span></p>
+            <p>total time: <span class="total-time"></span></p>
+            <p>star rating: <span class="star-rating"></span></p>
+          </div>
+          <button class="againButton">Play again?</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
