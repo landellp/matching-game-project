@@ -3,7 +3,7 @@
 ## Table of Contents
 
 * [Instructions](#instructions)
-* [Learnings]{#learnings)
+* [Learnings](#learnings)
 * [Preview](#preview)
 
 ## Instructions
