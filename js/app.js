@@ -17,6 +17,8 @@ let openedCards = [];
 // variable to update modal with dynamic statistics
 let modal = document.getElementsByClassName('modal')[0];
 
+// Had to move interval variable out of startGame() function to allow for reset to set the interval to 0:00
+let interval;
 
 // Function to ensure the cards are shuffled upon page load
 document.body.onload = startGame();
@@ -40,7 +42,6 @@ function startGame() {
   let hour = 0;
   let clock = document.querySelector('.timer');
   clock.innerHTML = '0 mins 0 secs';
-  let interval;
   clearInterval(interval);
 }
 
@@ -63,8 +64,8 @@ function cardFlip() {
   }
 }
 
-// Calls startGame() function with user clicks restart icon
-document.querySelector('.restart').addEventListener('click', startGame);
+// Calls reset() function with user clicks restart icon **changed to reset() function from startGame()
+document.querySelector('.restart').addEventListener('click', reset);
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
@@ -176,8 +177,10 @@ function modalMessage() {
 document.querySelector('.againButton').addEventListener('click', reset);
 
 // function calls startGame() when restart button clicked and hides the flipped cards
+// updated reset function to set interval value to '0' upon click of restart button
 function reset() {
   modal.classList.remove('show');
+  let interval = 0;
   startGame();
 }
 
